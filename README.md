@@ -28,10 +28,12 @@ The dataset is from [Kaggle - Telco Customer Churn](https://www.kaggle.com/datas
 - Account information (tenure, contract type, payment method, charges)
 
 ## Files
-- `customer_churn_prediction.ipynb` - Main analysis notebook with all code and visualizations
-- `WA_Fn-UseC_-Telco-Customer-Churn.csv` - Source dataset
-- `high_risk_customers.csv` - Identified at-risk customers for retention campaigns
-- `churn_prediction_model.pkl` - Saved Random Forest model
+- `customer_churn_prediction.ipynb` - Main analysis notebook
+- `WA_Fn-UseC_-Telco-Customer-Churn.csv` - Source dataset (required to run)
+- `high_risk_customers.csv` - Generated: identified at-risk customers
+- `high_risk_customers_with_recommendations.csv` - Generated: customers with retention recommendations
+
+**Note**: Running the notebook also generates `churn_prediction_model.pkl` (saved model) and `model_logs/` (performance tracking), which are excluded from version control.
 
 ## How to Run
 ```bash
